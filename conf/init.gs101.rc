@@ -597,6 +597,13 @@ on property:sys.boot_completed=1
     swapon_all /vendor/etc/fstab.${ro.board.platform}
     write /proc/sys/vm/swappiness 60
 
+    write /sys/kernel/vendor_mm/kswapd_cpu_affinity 0f
+    
+    write /sys/kernel/vendor_mm/kcompactd_cpu_affinity 0f
+
+    # Adjust watermark level
+    write /proc/sys/vm/watermark_scale_factor 0
+
     # Force empty CMA
     write /sys/kernel/vendor_mm/cma/farawimg/force_empty 1
 
@@ -623,6 +630,10 @@ on property:sys.boot_completed=1
     write /proc/vendor_sched/groups/sys_bg/uclamp_max 512
     write /proc/vendor_sched/groups/ota/uclamp_max 512
     write /proc/vendor_sched/groups/dex2oat/uclamp_max 615
+
+    write /proc/vendor_sched/uclamp_max_filter_divider 4
+    write /proc/vendor_sched/uclamp_max_filter_rt 16
+    write /proc/vendor_sched/uclamp_max_filter_enable 1
 
     # Set PMU freq limit parameters
     write /sys/devices/system/cpu/cpufreq/policy0/sched_pixel/lcpi_threshold 2
