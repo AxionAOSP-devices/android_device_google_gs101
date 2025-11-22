@@ -16,6 +16,9 @@
 
 include device/google/gs101/device.mk
 
+GPU_FREQS_PATH := /sys/devices/platform/1c500000.mali/available_frequencies
+GPU_MIN_FREQ_PATH := /sys/devices/platform/1c500000.mali/hint_min_freq
+
 ifneq ($(BOARD_WITHOUT_RADIO),true)
 # Telephony
 PRODUCT_COPY_FILES += \
