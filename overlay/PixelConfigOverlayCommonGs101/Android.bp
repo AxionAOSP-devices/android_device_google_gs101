@@ -4,6 +4,6 @@
 //
 
 runtime_resource_overlay {
-    name: "GlanceableHubSettingsConfigOverlay",
+    name: "PixelConfigOverlayCommonGs101",
     product_specific: true,
 }
