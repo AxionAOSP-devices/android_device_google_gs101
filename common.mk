@@ -352,14 +352,14 @@ PRODUCT_PACKAGES += \
     EuiccSupportPixelOverlay \
     FrameworkResOverlayProductGs101 \
     FrameworkResOverlayVendorGs101 \
-    GlanceableHubConfigOverlay \
-    GlanceableHubSettingsConfigOverlay \
-    GlanceableHubSysuiConfigOverlay \
-    GoogleConfigOverlay \
+    GlanceableHubConfigOverlayGs101 \
+    GlanceableHubSettingsConfigOverlayGs101 \
+    GlanceableHubSysuiConfigOverlayGs101 \
+    GoogleConfigOverlayGs101 \
     GooglePermissionControllerSafetyCenterOverlay \
-    PixelConfigOverlay2019 \
-    PixelConfigOverlay2021 \
-    PixelConfigOverlayCommon \
+    PixelConfigOverlay2019Gs101 \
+    PixelConfigOverlay2021Gs101 \
+    PixelConfigOverlayCommonGs101 \
     PixelConnectivityOverlay2022_midyear \
     PixelNfcOverlayCommon \
     PixelNfcOverlayGs101 \

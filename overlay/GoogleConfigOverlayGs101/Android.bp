@@ -4,6 +4,6 @@
 //
 
 runtime_resource_overlay {
-    name: "GoogleConfigOverlay",
+    name: "GoogleConfigOverlayGs101",
     product_specific: true,
 }
