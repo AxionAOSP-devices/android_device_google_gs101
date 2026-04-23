@@ -418,3 +418,6 @@ DEVICE_PRODUCT_COMPATIBILITY_MATRIX_FILE += \
 
 # ZRAM writeback
 include hardware/google/pixel/mm/device_gki.mk
+
+PRODUCT_COPY_FILES += \
+    device/google/gs101/configs/axion/ax_perf_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ax_perf_config.xml
