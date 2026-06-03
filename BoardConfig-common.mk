@@ -39,7 +39,6 @@ BOARD_KERNEL_CMDLINE += \
     cma_sysfs.experimental=Y \
     rcupdate.rcu_expedited=1 \
     rcu_nocbs=all \
-    rcutree.enable_rcu_lazy \
     swiotlb=noforce \
     cgroup.memory=nokmem \
     rodata=on \
